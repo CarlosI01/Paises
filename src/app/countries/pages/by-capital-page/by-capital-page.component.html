@@ -1,0 +1,14 @@
+<h2>Por Capital</h2>
+<hr>
+<div class="row">
+    <div class="col">
+       <!-- <input type="text" class="form-control" (keyup.enter)="SearchCapital(searchBox.value)"  #searchBox> -->
+        <app-search-box placeholder="Buscar por Capital" (myEvent)="Show($event)"></app-search-box>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+       <app-country-table [countries]="country"></app-country-table>
+    </div>
+</div>
